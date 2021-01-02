@@ -1,0 +1,58 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,500;0,800;0,900;1,400;1,500;1,700;1,800&display=swap');
+
+:root{
+    --light-oragne:rgba(255, 182, 146, 0.1);
+    --primay-color:#000000;
+    --base-color:#E4DED1;
+    --para-font: "Inter";
+    --para-weight: 300;
+    --para-size:26px;
+}
+/* =========================== */
+/* BASIC SETUP */
+/* =========================== */
+
+@font-face{
+    font-family: 'Muli-bold' sans-serif;
+    src: url('./fonts/Muli-Bold.woff');
+}
+
+@font-face{
+    font-family: 'Muli-regular' sans-serif;
+    src: url('./fonts/Muli-Regular.woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    overflow-x: hidden;
+    font-family: 'Inter', sans-serif;
+}
+h1,h2,h3,h4,h5{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+p{
+    margin: 0;
+    margin-bottom: 0;
+    font-family: var(--para-font);
+    font-style: normal;
+    font-weight: var(--para-weight);
+    font-size: var(--para-size);
+    line-height: 30px;
+    color: #000000;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}

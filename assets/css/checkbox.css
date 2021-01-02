@@ -1,0 +1,117 @@
+
+
+@keyframes click-wave {
+  0% {
+    height: 22px;
+    width: 22px;
+    opacity: 0.35;
+    position: relative;
+  }
+  100% {
+    height: 200px;
+    width: 200px;
+    margin-left: -80px;
+    margin-top: -80px;
+    opacity: 0;
+  }
+}
+
+.option-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  position: relative;
+  top: 13.33333px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 22px;
+  width: 22px;
+  transition: all 0.15s ease-out 0s;
+  border: 1px solid #ddd;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 0.5rem;
+  outline: none;
+  position: relative;
+  z-index: 1000;
+}
+
+.option-input:hover {
+  background: #9faab7;
+}
+.option-input:checked {
+  background: #D47C59;
+}
+.option-input:checked::before {
+  height: 22px;
+  width: 22px;
+  position: absolute;
+  content: '✔';
+  display: inline-block;
+  font-size: 13px;
+  text-align: center;
+  line-height: 20px;
+}
+.option-input:checked::after {
+  -webkit-animation: click-wave 0.65s;
+  -moz-animation: click-wave 0.65s;
+  animation: click-wave 0.65s;
+  background: #D47C59, 100%;
+  content: '';
+  display: block;
+  position: relative;
+  z-index: 100;
+}
+.option-input.radio {
+  border-radius: 50%;
+}
+.option-input.radio::after {
+  border-radius: 50%;
+}
+
+.checked-box {
+    background: #FFFFFF;
+    border: 1px solid #CFD0D7;
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding: 10px;
+    position: relative;
+}
+.radion-label {
+    font-family: 'Mulish';
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.01em;
+    color: #4636367d;
+    padding: 0 36px;
+    cursor: pointer;
+}
+.checked-box input {
+    position: absolute;
+    left: 12px;
+}
+
+.option-input:checked ~ .radion-label{
+	color:red;
+}
+
+.diff{
+	background: #FFF8F5;
+	border: 1px solid #D47C59;
+	box-sizing: border-box;
+	border-radius: 2px;
+}
+.diff .radion-label{
+	color: #D47C59;
+	opacity: 1;
+	font-weight: bold;
+}
+
+
+
+/*newbox*/
+
